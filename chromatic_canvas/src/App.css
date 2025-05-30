@@ -103,7 +103,12 @@ body::after {
 }
 
 .logo-symbol {
-  color: var(--kavia-orange);
+  /* color removed—handled by SVG gradient */
+  margin-right: 2px;
+  font-size: 1.35em;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .container {
