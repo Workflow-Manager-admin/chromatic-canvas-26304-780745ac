@@ -1,36 +1,29 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import InteractiveLessons from './components/InteractiveLessons';
+import ArtworkGallery from './components/ArtworkGallery';
+import UserProfile from './components/UserProfile';
 
 function App() {
   return (
-    <div className="app">
-      <nav className="navbar">
-        <div className="container">
-          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-            <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
-            </div>
-            <button className="btn">Template Button</button>
+    <BrowserRouter>
+      <div className="app">
+        <Navigation />
+        <main style={{ marginTop: 76 }}>
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/lessons" element={<InteractiveLessons />} />
+              <Route path="/gallery" element={<ArtworkGallery />} />
+              <Route path="/profile" element={<UserProfile />} />
+            </Routes>
           </div>
-        </div>
-      </nav>
-
-      <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">chromatic_canvas</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
-        </div>
-      </main>
-    </div>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
