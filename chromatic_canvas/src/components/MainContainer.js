@@ -1,5 +1,9 @@
 import React from 'react';
-import { NavLink, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Navigation from './Navigation';
+import LessonView from './LessonView';
+import GalleryView from './GalleryView';
+import ProfileView from './ProfileView';
 
 // PUBLIC_INTERFACE
 /**
