@@ -7,3 +7,26 @@
 (node:119) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
+Failed to compile.
+
+Syntax error: /home/kavia/workspace/code-generation/chromatic-canvas-26304-780745ac/chromatic_canvas/src/App.css At-rule without name (260917:2)
+  260915 |     max-width: 97vw;
+  260916 |   }
+> 260917 | }@/* ======================= Artwork Gallery Grid & Card Styling ======================= */
+         |  ^
+  260918 | .artwork-gallery-grid {
+  260919 |   display: grid;
+ERROR in ./src/App.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+SyntaxError
+
+(260917:2) /home/kavia/workspace/code-generation/chromatic-canvas-26304-780745ac/chromatic_canvas/src/App.css At-rule without name
+
+  260915 |     max-width: 97vw;
+  260916 |   }
+> 260917 | }@/* ======================= Artwork Gallery Grid & Card Styling ======================= */
+         |  ^
+  260918 | .artwork-gallery-grid {
+  260919 |   display: grid;
+
+webpack compiled with 1 error
