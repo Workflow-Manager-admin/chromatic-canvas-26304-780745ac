@@ -12,52 +12,77 @@ export default function Navigation() {
       <div className="container" style={{ padding: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
           <div className="logo">
-            {/* Improved Minimalist SVG Palette Logo */}
-            <span className="logo-symbol" style={{display:'inline-flex', alignItems:'center', verticalAlign:'middle'}}>
+            {/* Minimalist Paintbrush SVG Logo with Hot Pink, Purple, and Blue Gradient */}
+            <span className="logo-symbol" style={{display: 'inline-flex', alignItems: 'center', verticalAlign: 'middle'}}>
               <svg
-                width="32"
-                height="28"
-                viewBox="0 0 32 28"
+                width="30"
+                height="32"
+                viewBox="0 0 30 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-label="Art palette logo"
-                style={{display:'block'}}
+                aria-label="Paintbrush logo"
+                style={{ display: 'block' }}
               >
                 <defs>
-                  <linearGradient id="palette-gradient-modern" x1="2" y1="12" x2="30" y2="26" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paintbrush-gradient" x1="8" y1="25" x2="26" y2="5" gradientUnits="userSpaceOnUse">
                     <stop offset="0" stopColor="#FF5F6D"/>
-                    <stop offset="0.5" stopColor="#B16DFF"/>
+                    <stop offset="0.45" stopColor="#B16DFF"/>
                     <stop offset="1" stopColor="#47E7FA"/>
                   </linearGradient>
+                  <linearGradient id="handle-gradient" x1="12" y1="28" x2="4" y2="10" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stopColor="#222"/>
+                    <stop offset="1" stopColor="#888"/>
+                  </linearGradient>
                 </defs>
-                {/* Art palette base shape */}
-                <path
-                  d="M16 3
-                    C7.6 3 2.5 9.28 2.5 15.7
-                    c0 6.56 6.55 9.8 11 7.84
-                    1.53-0.67 1.54-2.02.87-2.77
-                    -0.39-0.44-1.19-0.72-1.95-0.55
-                    -2.08 0.46-4.12-1.55-4.12-3.84
-                    0-2.44 2.05-4.27 4.66-4.27
-                    1.09 0 2.03 0.38 2.87 1.33
-                    0.5 0.58 1.35 0.51 1.81-0.12
-                    C25 7.5 29.5 14.1 26.3 18
-                    c-1.11 1.34-4.3 0.67-4.3 3.1
-                    0 1.92 2.34 2.76 4.64 1.62
-                    C28.47 20 30 17.06 29.5 13.44
-                    28.71 7.99 23.36 3 16 3z"
-                  fill="url(#palette-gradient-modern)"
-                  stroke="#181818"
-                  strokeOpacity="0.13"
-                  strokeWidth="1.1"
+                {/* Minimalist handle - slightly tapering gray */}
+                <rect
+                  x="12"
+                  y="8"
+                  width="4"
+                  height="16"
+                  rx="2"
+                  fill="url(#handle-gradient)"
+                  stroke="#191919"
+                  strokeWidth="0.7"
                 />
-                {/* Paint blobs with gradient-filled strokes */}
-                <circle cx="8.9" cy="13.3" r="1.32" fill="#fff" stroke="url(#palette-gradient-modern)" strokeWidth="0.8" />
-                <circle cx="15.2" cy="8.2" r="1.13" fill="#FF5F6D" stroke="#FFF" strokeWidth="0.5" />
-                <circle cx="23.5" cy="14.3" r="1.14" fill="#47E7FA" stroke="#FFF" strokeWidth="0.5" />
-                <circle cx="13.7" cy="20.1" r="1.11" fill="#B16DFF" stroke="#FFF" strokeWidth="0.5" />
-                {/* Subtle light highlight */}
-                <ellipse cx="11.5" cy="6.1" rx="1.3" ry="0.45" fill="#fff" opacity="0.17" />
+                {/* Paint ferrule - small metallic band */}
+                <rect
+                  x="12.6"
+                  y="7"
+                  width="2.8"
+                  height="3"
+                  rx="1.2"
+                  fill="#cfc9e9"
+                  stroke="#b6aadd"
+                  strokeWidth="0.5"
+                />
+                {/* Paintbrush bristles - gradient colored and stylized */}
+                <path
+                  d="M10.8 7.6 C11.2 4.6 17.9 4.7 18.3 7.8
+                     C18.5 9.5 16.6 12.2 14 12
+                     C11.5 11.7 10.5 9.3 10.8 7.6Z"
+                  fill="url(#paintbrush-gradient)"
+                  stroke="#B16DFF"
+                  strokeWidth="0.7"
+                />
+                {/* Paint tip accent (drop or dab for vivid logo edge) */}
+                <ellipse
+                  cx="15.1"
+                  cy="6.8"
+                  rx="1.04"
+                  ry="1.54"
+                  fill="url(#paintbrush-gradient)"
+                  opacity="0.94"
+                />
+                {/* Subtle shadow below handle for depth */}
+                <ellipse
+                  cx="14"
+                  cy="25.5"
+                  rx="2.0"
+                  ry="0.7"
+                  fill="#000"
+                  opacity="0.13"
+                />
               </svg>
             </span>
             ArtS+
