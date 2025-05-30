@@ -1,0 +1,114 @@
+:root {
+  /* Rainbow gradient used for active nav underline or fill */
+  --rainbow-gradient: linear-gradient(
+    90deg,
+    #ff5f6d 0%,
+    #ffc371 25%,
+    #47e7fa 50%,
+    #7bffb2 75%,
+    #b16dff 100%
+  );
+  /* Fallback text colors */
+  --nav-bg: var(--kavia-dark, #111);
+  --nav-text: var(--text-color, #fff);
+  --nav-border: var(--border-color, rgba(255,255,255,0.12));
+}
+
+.cc-navbar {
+  width: 100%;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  padding: 0.45rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  min-height: 3.4rem;
+  box-sizing: border-box;
+}
+
+.cc-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.logo-symbol {
+  color: var(--kavia-orange, #e87a41);
+  font-size: 1.1em;
+}
+
+.cc-nav-links {
+  display: flex;
+  gap: 2.3rem;
+  align-items: center;
+}
+
+.cc-link {
+  text-decoration: none;
+  color: var(--nav-text);
+  border-radius: 9px;
+  font-size: 1.06rem;
+  font-weight: 500;
+  padding: 0.32em 1.18em 0.32em 1.18em;
+  position: relative;
+  transition: color 0.18s;
+  background: none;
+  cursor: pointer;
+}
+
+/* Rainbow-gradient underline/effect for the active link */
+.cc-link.active,
+.cc-link[aria-current="page"] {
+  color: transparent;
+  background: var(--rainbow-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.cc-link.active::after,
+.cc-link[aria-current="page"]::after {
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  margin-top: 4px;
+  background: var(--rainbow-gradient);
+  width: 90%;
+  margin-left: 5%;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  z-index: 2;
+  transition: background 0.2s;
+}
+
+/* Slim hover highlight for non-active links */
+.cc-link:not(.active):hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--kavia-orange, #e87a41);
+  transition: background 120ms, color 164ms;
+}
+
+@media (max-width: 600px) {
+  .cc-navbar {
+    padding: 0.4rem 0.75rem;
+  }
+  .cc-link {
+    font-size: 0.97rem;
+    padding: 0.25em 0.8em;
+  }
+  .cc-nav-links {
+    gap: 1.2rem;
+  }
+  .cc-logo {
+    font-size: 1rem;
+  }
+}
