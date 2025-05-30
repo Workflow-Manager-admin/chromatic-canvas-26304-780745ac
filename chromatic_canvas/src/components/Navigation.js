@@ -12,27 +12,52 @@ export default function Navigation() {
       <div className="container" style={{ padding: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
           <div className="logo">
-            {/* Custom SVG art palette icon with ombre gradient */}
+            {/* Improved Minimalist SVG Palette Logo */}
             <span className="logo-symbol" style={{display:'inline-flex', alignItems:'center', verticalAlign:'middle'}}>
-              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Art palette logo" style={{display:'block'}}>
+              <svg
+                width="32"
+                height="28"
+                viewBox="0 0 32 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Art palette logo"
+                style={{display:'block'}}
+              >
                 <defs>
-                  <linearGradient id="palette-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="palette-gradient-modern" x1="2" y1="12" x2="30" y2="26" gradientUnits="userSpaceOnUse">
                     <stop offset="0" stopColor="#FF5F6D"/>
                     <stop offset="0.5" stopColor="#B16DFF"/>
                     <stop offset="1" stopColor="#47E7FA"/>
                   </linearGradient>
                 </defs>
-                <path 
-                  d="M16 3C9 3 3.2 8.52 3.2 15.021c0 7.319 6.71 11.4 10.363 9.387.997-.55 1.454-1.562 1.454-2.535 0-.958-.368-1.677-1.03-1.984-2.189-1.036-3.157-2.385-3.157-3.819 0-1.693 1.401-3.072 3.17-3.072.967 0 1.741.312 2.356 1.052.41.48 1.089.446 1.482-.027 3.32-4.02 8.888-1.462 8.888 2.993C28.8 8.52 23 3 16 3Z"
-                  fill="url(#palette-gradient)" 
-                  stroke="rgba(30,30,30,0.16)"
-                  strokeWidth="1"
+                {/* Art palette base shape */}
+                <path
+                  d="M16 3
+                    C7.6 3 2.5 9.28 2.5 15.7
+                    c0 6.56 6.55 9.8 11 7.84
+                    1.53-0.67 1.54-2.02.87-2.77
+                    -0.39-0.44-1.19-0.72-1.95-0.55
+                    -2.08 0.46-4.12-1.55-4.12-3.84
+                    0-2.44 2.05-4.27 4.66-4.27
+                    1.09 0 2.03 0.38 2.87 1.33
+                    0.5 0.58 1.35 0.51 1.81-0.12
+                    C25 7.5 29.5 14.1 26.3 18
+                    c-1.11 1.34-4.3 0.67-4.3 3.1
+                    0 1.92 2.34 2.76 4.64 1.62
+                    C28.47 20 30 17.06 29.5 13.44
+                    28.71 7.99 23.36 3 16 3z"
+                  fill="url(#palette-gradient-modern)"
+                  stroke="#181818"
+                  strokeOpacity="0.13"
+                  strokeWidth="1.1"
                 />
-                {/* Paint blobs */}
-                <circle cx="10" cy="12" r="1.2" fill="#FF5F6D"/>
-                <circle cx="16" cy="8.5" r="1.1" fill="#B16DFF"/>
-                <circle cx="21.2" cy="12.7" r="1.1" fill="#47E7FA"/>
-                <circle cx="12" cy="19" r="1.1" fill="#B16DFF"/>
+                {/* Paint blobs with gradient-filled strokes */}
+                <circle cx="8.9" cy="13.3" r="1.32" fill="#fff" stroke="url(#palette-gradient-modern)" strokeWidth="0.8" />
+                <circle cx="15.2" cy="8.2" r="1.13" fill="#FF5F6D" stroke="#FFF" strokeWidth="0.5" />
+                <circle cx="23.5" cy="14.3" r="1.14" fill="#47E7FA" stroke="#FFF" strokeWidth="0.5" />
+                <circle cx="13.7" cy="20.1" r="1.11" fill="#B16DFF" stroke="#FFF" strokeWidth="0.5" />
+                {/* Subtle light highlight */}
+                <ellipse cx="11.5" cy="6.1" rx="1.3" ry="0.45" fill="#fff" opacity="0.17" />
               </svg>
             </span>
             ArtS+
