@@ -15,13 +15,13 @@ function Navigation() {
         Chromatic Canvas
       </div>
       <div className="cc-nav-links">
-        <NavLink to="/lessons" className="cc-link">
+        <NavLink to="/lessons" className={({ isActive }) => isActive ? "cc-link active" : "cc-link"}>
           Lessons
         </NavLink>
-        <NavLink to="/gallery" className="cc-link">
+        <NavLink to="/gallery" className={({ isActive }) => isActive ? "cc-link active" : "cc-link"}>
           Gallery
         </NavLink>
-        <NavLink to="/profile" className="cc-link">
+        <NavLink to="/profile" className={({ isActive }) => isActive ? "cc-link active" : "cc-link"}>
           Profile
         </NavLink>
       </div>
