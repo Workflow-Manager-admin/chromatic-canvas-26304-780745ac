@@ -95,6 +95,10 @@ export default function InteractiveLessons() {
   return (
     <section>
       <h2 className="center-heading" style={{ marginBottom: 32 }}>Interactive Lessons</h2>
+      {/* Introduction paragraph */}
+      <p className="description" style={{ textAlign: "center", margin: "0 auto 24px auto" }}>
+        Welcome to the Lessons page! Here you'll find a curated series of step-by-step video lectures designed to help you master foundational and advanced art skills. Each lesson below focuses on a key topic—ranging from drawing and color theory to digital techniques and creative storytelling. Explore the grid to learn at your own pace and unlock new creative possibilities!
+      </p>
       <div className="video-lecture-grid">
         {LECTURES.map((lecture, i) => (
           <VideoLectureCard key={i} title={lecture.title} desc={lecture.desc} />
