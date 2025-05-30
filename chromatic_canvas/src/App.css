@@ -182,11 +182,13 @@ body::after {
 /* --- Teacher profiles row and cards --- */
 .teacher-profiles-row {
   display: flex;
+  flex-direction: row;
   gap: 2.5rem;
   margin: 40px 0 0 0;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .teacher-profile {
@@ -194,8 +196,8 @@ body::after {
   border: 1.3px solid var(--border-color);
   border-radius: 18px;
   min-width: 220px;
-  max-width: 260px;
-  flex: 1 1 220px;
+  max-width: 310px;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,7 +258,7 @@ body::after {
   width: 100%;
 }
 
-/* Responsive: stack on mobile */
+/* Responsive: adjust gap at tablet, stack on mobile below 650px */
 @media (max-width: 900px) {
   .teacher-profiles-row {
     gap: 1.4rem;
@@ -273,9 +275,11 @@ body::after {
     flex-direction: column;
     align-items: center;
     gap: 1.8rem;
+    flex-wrap: nowrap;
   }
   .teacher-profile {
     width: 90%;
     min-width: unset;
+    max-width: 480px;
   }
 }
