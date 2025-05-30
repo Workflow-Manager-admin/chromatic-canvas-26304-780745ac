@@ -1,6 +1,6 @@
-# Lightweight React Template for KAVIA
+# ArtS+ – Lightweight React Template for KAVIA
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+This project provides a minimal React template, originally built for "Chromatic Canvas" and now rebranded as "ArtS+". It offers a clean, modern UI and minimal dependencies.
 
 ## Features
 

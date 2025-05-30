@@ -12,7 +12,7 @@ export default function Navigation() {
       <div className="container" style={{ padding: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
           <div className="logo">
-            <span className="logo-symbol">*</span> Chromatic Canvas
+            <span className="logo-symbol">*</span> ArtS+
           </div>
           <ul className="nav-list" style={{
             display: 'flex',
