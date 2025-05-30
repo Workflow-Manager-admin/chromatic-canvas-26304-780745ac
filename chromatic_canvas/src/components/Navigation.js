@@ -17,11 +17,9 @@ export default function Navigation() {
               <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Art palette logo" style={{display:'block'}}>
                 <defs>
                   <linearGradient id="palette-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#FF5F6D"/>
-                    <stop offset="0.25" stopColor="#FFC371"/>
-                    <stop offset="0.5" stopColor="#47E7FA"/>
-                    <stop offset="0.75" stopColor="#7BFFB2"/>
-                    <stop offset="1" stopColor="#B16DFF"/>
+                    <stop offset="0" stopColor="#FF5F6D"/>
+                    <stop offset="0.5" stopColor="#B16DFF"/>
+                    <stop offset="1" stopColor="#47E7FA"/>
                   </linearGradient>
                 </defs>
                 <path 
@@ -31,10 +29,10 @@ export default function Navigation() {
                   strokeWidth="1"
                 />
                 {/* Paint blobs */}
-                <circle cx="10" cy="12" r="1.2" fill="#FF8B4D"/>
+                <circle cx="10" cy="12" r="1.2" fill="#FF5F6D"/>
                 <circle cx="16" cy="8.5" r="1.1" fill="#B16DFF"/>
                 <circle cx="21.2" cy="12.7" r="1.1" fill="#47E7FA"/>
-                <circle cx="12" cy="19" r="1.1" fill="#FFC371"/>
+                <circle cx="12" cy="19" r="1.1" fill="#B16DFF"/>
               </svg>
             </span>
             ArtS+
@@ -113,7 +111,7 @@ export default function Navigation() {
           height: 3px;
           width: 90%;
           border-radius: 3px;
-          background: linear-gradient(90deg, #FF5F6D 0%, #FFC371 25%, #47E7FA 50%, #7BFFB2 75%, #B16DFF 100%);
+          background: linear-gradient(90deg, #FF5F6D 0%, #B16DFF 50%, #47E7FA 100%);
           animation: rainbow-bar-fadein 0.4s;
         }
         @keyframes rainbow-bar-fadein {
