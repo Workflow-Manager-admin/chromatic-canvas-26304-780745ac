@@ -6,6 +6,107 @@
   --border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 /* Import a minimalist, thin 'Inter' font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
 
@@ -24,6 +125,107 @@ body {
   overflow-x: hidden;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 /* Headings - minimalist and thinner */
 h1, h2, h3, h4, h5, h6,
 .title, .subtitle, .center-heading {
@@ -32,16 +234,319 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: 0.02em;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 /* Body text */
 body, .description {
   font-family: 'Inter', 'Roboto', 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 /* Semi-bold for logo/brand emphasis */
 .logo {
   font-family: 'Inter', 'Roboto', 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 /* Rainbow background overlay (dark + subtle linear-gradient) */
@@ -68,16 +573,319 @@ body::after {
   pointer-events: none;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 /* Ensure stacking context so overlay sits behind all app content */
 .app, .navbar, .container, main, #root {
   position: relative;
   z-index: 1;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .navbar {
@@ -94,12 +902,214 @@ body::after {
   z-index: 100;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .logo {
   font-size: 1.25rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .logo-symbol {
@@ -111,12 +1121,214 @@ body::after {
   vertical-align: middle;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .hero {
@@ -129,10 +1341,212 @@ body::after {
   gap: 24px;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .subtitle {
   color: var(--kavia-orange);
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .title {
@@ -142,12 +1556,214 @@ body::after {
   margin: 0;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .description {
   font-size: 1.1rem;
   line-height: 1.5;
   color: var(--text-secondary);
   max-width: 600px;
   margin-bottom: 16px;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .btn {
@@ -162,13 +1778,316 @@ body::after {
   transition: background-color 0.2s ease;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .btn:hover {
   background-color: #FF8B4D;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .btn-large {
   padding: 12px 24px;
   font-size: 1.1rem;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 /* Center-align page headings for consistency across pages */
@@ -177,6 +2096,107 @@ body::after {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 /* --- Teacher profiles row and cards --- */
@@ -189,6 +2209,107 @@ body::after {
   align-items: stretch;
   flex-wrap: nowrap;
   width: 100%;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .teacher-profile {
@@ -207,9 +2328,211 @@ body::after {
   transition: box-shadow 0.18s;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .teacher-profile:hover, .teacher-profile:focus-within {
   box-shadow: 0 4px 18px 0 rgba(232,122,65,0.09), 0 1px 8px rgba(160,90,255,0.09);
   border-color: var(--kavia-orange);
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .teacher-avatar {
@@ -225,6 +2548,107 @@ body::after {
   /* Placeholder SVG or initials design */
   position: relative;
 }
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
 .teacher-avatar::before {
   content: "";
   display: block;
@@ -237,6 +2661,107 @@ body::after {
   border-radius: 50%;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .teacher-name {
   font-size: 1.18rem;
   font-weight: 500;
@@ -244,6 +2769,107 @@ body::after {
   text-align: center;
   margin-bottom: 7px;
   margin-top: 4px;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 .teacher-desc {
@@ -254,8 +2880,210 @@ body::after {
   margin-bottom: 0;
 }
 
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+
 .teacher-profile-info {
   width: 100%;
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
 }
 
 /* Responsive: adjust gap at tablet, stack on mobile below 650px */
@@ -263,10 +3091,313 @@ body::after {
   .teacher-profiles-row {
     gap: 1.4rem;
   }
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
   .teacher-profile {
     min-width: 180px;
     max-width: 100%;
     padding: 26px 10px 20px 10px;
+  }
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
   }
 }
 
@@ -277,9 +3408,312 @@ body::after {
     gap: 1.8rem;
     flex-wrap: nowrap;
   }
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
   .teacher-profile {
     width: 90%;
     min-width: unset;
     max-width: 480px;
+  }
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
+  }
+}
+}
+
+/* ======================= Minimalist Auth (Sign Up/Login) Form ======================= */
+
+.auth-form-box {
+  margin: 56px auto 0 auto;
+  max-width: 370px;
+  background: rgba(26,26,26,0.99); /* Maintains dark theme, add subtle distinction */
+  border-radius: 16px;
+  border: 1.4px solid var(--border-color);
+  box-shadow: 0 2.5px 28px 0 rgba(90,90,110,0.10);
+  padding: 36px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.auth-form-title {
+  font-size: 1.34rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--kavia-orange);
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-label {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-input {
+  background-color: rgba(255,255,255,0.04);
+  border: 1.3px solid var(--border-color);
+  font-family: inherit;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 9px 14px;
+  border-radius: 7px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  transition: border-color 0.15s, background 0.13s;
+}
+.auth-input:focus {
+  border-color: var(--kavia-orange);
+  background: rgba(232, 122, 65, 0.04);
+}
+
+.auth-input-file {
+  font-size: 0.98rem;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+}
+
+.filename-indicator {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 4px;
+  font-size: 0.87em;
+  background: rgba(232,122,65,0.12);
+  border-radius: 6px;
+  color: var(--kavia-orange);
+  font-weight: 400;
+}
+
+.auth-form .btn {
+  margin-top: 12px;
+}
+
+/* Responsive: form box adapts and stacks on mobile */
+@media (max-width: 480px) {
+  .auth-form-box {
+    padding: 22px 9px 16px 9px;
+    max-width: 98vw;
+    width: 100%;
+  }
+  .auth-form-title {
+    font-size: 1.1rem;
+  }
+  .auth-form {
+    gap: 13px;
   }
 }
