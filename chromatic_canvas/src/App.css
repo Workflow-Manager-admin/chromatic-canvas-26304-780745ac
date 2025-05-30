@@ -13,6 +13,41 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Subtle rainbow gradient overlay using an :after pseudo-element via global style */
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Rainbow background overlay (dark + subtle linear-gradient) */
+body::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Visually blended, soft rainbow, complements minimal dark UI, uses brand accent gradient */
+  background:
+    linear-gradient(
+      120deg, 
+      #FF5F6D 0%, 
+      #FFC371 18%, 
+      #47E7FA 40%, 
+      #7BFFB2 68%, 
+      #B16DFF 90%
+    );
+  opacity: 0.14; /* Subtlety: not overwhelming */
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+
+/* Ensure stacking context so overlay sits behind all app content */
+.app, .navbar, .container, main, #root {
+  position: relative;
+  z-index: 1;
 }
 
 .app {
