@@ -7,7 +7,7 @@ import React from 'react';
 export default function UserProfile() {
   return (
     <section>
-      <h2>User Profile</h2>
+      <h2 className="center-heading">User Profile</h2>
     </section>
   );
 }

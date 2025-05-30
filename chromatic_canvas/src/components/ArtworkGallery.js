@@ -7,7 +7,7 @@ import React from 'react';
 export default function ArtworkGallery() {
   return (
     <section>
-      <h2>Artwork Gallery</h2>
+      <h2 className="center-heading">Artwork Gallery</h2>
     </section>
   );
 }

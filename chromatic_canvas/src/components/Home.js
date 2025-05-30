@@ -7,7 +7,7 @@ import React from 'react';
 export default function Home() {
   return (
     <section>
-      <h2>Home</h2>
+      <h2 className="center-heading">Home</h2>
     </section>
   );
 }

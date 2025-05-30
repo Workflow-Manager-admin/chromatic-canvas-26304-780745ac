@@ -7,7 +7,7 @@ import React from 'react';
 export default function InteractiveLessons() {
   return (
     <section>
-      <h2>Interactive Lessons</h2>
+      <h2 className="center-heading">Interactive Lessons</h2>
     </section>
   );
 }
