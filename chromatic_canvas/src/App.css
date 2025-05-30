@@ -63,8 +63,8 @@
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -182,8 +182,8 @@ body {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -291,8 +291,8 @@ h1, h2, h3, h4, h5, h6,
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -398,8 +398,8 @@ body, .description {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -505,8 +505,8 @@ body, .description {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -630,8 +630,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -737,8 +737,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -844,8 +844,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -959,8 +959,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1068,8 +1068,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1178,8 +1178,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1287,8 +1287,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1398,8 +1398,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1505,8 +1505,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1613,8 +1613,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1722,8 +1722,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1835,8 +1835,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -1940,8 +1940,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2046,8 +2046,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2155,8 +2155,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2268,8 +2268,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2385,8 +2385,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2491,8 +2491,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2606,8 +2606,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2718,8 +2718,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2828,8 +2828,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -2937,8 +2937,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -3042,8 +3042,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -3149,8 +3149,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -3255,8 +3255,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -3357,8 +3357,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -3466,8 +3466,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -3572,8 +3572,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
@@ -3674,8 +3674,8 @@ body::after {
   transition: border-color 0.15s, background 0.13s;
 }
 .auth-input:focus {
-  border-color: var(--kavia-orange);
-  background: rgba(232, 122, 65, 0.04);
+  border-color: var(--kavia-purple);
+  background: rgba(177, 109, 255, 0.08);
 }
 
 .auth-input-file {
