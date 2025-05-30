@@ -1,11 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // PUBLIC_INTERFACE
 /**
  * Minimal Home component with three horizontally aligned teacher profiles,
  * styled and structured responsively for side-by-side row appearance above mobile.
+ * Also includes a minimalist log in/sign up form below the profiles.
  */
 export default function Home() {
+  // State for form fields (for demo/UX only; does not submit)
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    password: '',
+    artwork: null,
+  });
+
+  const [artworkName, setArtworkName] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleChange(e) {
+    const { name, value, files } = e.target;
+    if (name === 'artwork') {
+      setForm(f => ({ ...f, artwork: files[0] }));
+      setArtworkName(files[0] ? files[0].name : '');
+    } else {
+      setForm(f => ({ ...f, [name]: value }));
+    }
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setSubmitted(true);
+    // No actual backend logic; just resets after a second for demo
+    setTimeout(() => setSubmitted(false), 1200);
+    setForm({ name: '', email: '', password: '', artwork: null });
+    setArtworkName('');
+  }
+
   return (
     <section>
       <h2 className="center-heading">Home</h2>
@@ -43,6 +74,75 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </div>
+
+      {/* Minimalist Login/Sign Up Form */}
+      <div className="auth-form-box" tabIndex="0" aria-label="Sign up form">
+        <form className="auth-form" onSubmit={handleSubmit} autoComplete="off">
+          <h3 className="auth-form-title">Log In / Sign Up</h3>
+          <label className="auth-label">
+            Name
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              autoComplete="username"
+              onChange={handleChange}
+              className="auth-input"
+              placeholder="Your name"
+              required
+              minLength={2}
+            />
+          </label>
+          <label className="auth-label">
+            Email
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              autoComplete="email"
+              onChange={handleChange}
+              className="auth-input"
+              placeholder="you@email.com"
+              required
+            />
+          </label>
+          <label className="auth-label">
+            Password
+            <input
+              type="password"
+              name="password"
+              value={form.password}
+              onChange={handleChange}
+              className="auth-input"
+              placeholder="Password"
+              required
+              minLength={6}
+              autoComplete="new-password"
+            />
+          </label>
+          <label className="auth-label" style={{marginBottom: 12}}>
+            <span>
+              Upload Artwork{' '}
+              <span style={{fontWeight: 300, color: 'var(--text-secondary)', fontSize: '0.97em'}}>
+                (optional)
+              </span>
+            </span>
+            <input
+              type="file"
+              name="artwork"
+              accept="image/*"
+              onChange={handleChange}
+              className="auth-input-file"
+            />
+            {artworkName && (
+              <span className="filename-indicator">{artworkName}</span>
+            )}
+          </label>
+          <button type="submit" className="btn btn-large" disabled={submitted}>
+            {submitted ? 'Submitting...' : 'Submit'}
+          </button>
+        </form>
       </div>
     </section>
   );
